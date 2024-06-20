@@ -12,7 +12,7 @@ const Sorotan = () => {
         </div>
 
         <div className='sm:flex'>
-            <div className='sm:w-full'>
+            <div className='sm:w-full sm:flex sm:items-center'>
                 <SorotanSlides />
             </div>
             <div className='sm:flex sm:flex-col sm:pl-2'>

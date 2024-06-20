@@ -50,11 +50,11 @@ const SorotanSlides = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                                 </svg>
                             </button>
-                            <div className="w-full">
+                            <div className="w-full sm:h-[410px]">
                                 <img 
                                     src={slides[current].img} 
                                     alt={`Slide ${current + 1}`} 
-                                    className="w-full"
+                                    className="w-full h-full sm:object-fill"
                                 />
                             </div>
                             <button 
