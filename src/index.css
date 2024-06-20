@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.nav-open {
+  max-height: 100vh;
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.3s ease-out, transform 0.3s cubic-bezier(0.5, 0, 0, 0);
+}
+
+.nav-close {
+  max-height: 0;
+  opacity: 1;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease-out, transform 0.3s cubic-bezier(0.5, 0, 0, 0);
+}
+
+.menu-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.menu-button span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-button span:nth-child(1) {
+  top: 2px;
+}
+
+.menu-button span:nth-child(2) {
+  top: 50%;
+  width: 75%;
+  transform: translateX(25%);
+}
+
+.menu-button span:nth-child(3) {
+  bottom: 2px;
+}
+
+.menu-button.open span:nth-child(1) {
+  top: 4px;
+  width: 110%;
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: rgb(92, 166, 255);
+}
+
+.menu-button.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.open span:nth-child(3) {
+  bottom: 3px;
+  width: 110%;
+  transform: rotate(-45deg) translate(5px, -5px);
+  background-color: rgb(92, 166, 255);
+}
+.arrow {
+  width: 0;
+  height: 8px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid white;
+}
+.arrow-lg {
+  width: 0;
+  height: 8px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 4px solid black;
+}
+.arrow-menu {
+  width: 0;
+  margin-top: 4px;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid gray;
+}
+.highlight-title {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight-title::after {
+  content: '';
+  display: block;
+  width: 110%;
+  height: 4px;
+  background: #3b82f6;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.custom-gradient {
+  background: linear-gradient(to top, var(--tw-gradient-from) 80%, var(--tw-gradient-to) 20%);
+}
+
+
+
+
