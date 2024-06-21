@@ -34,7 +34,7 @@ const Trending = () => {
   };
 
   return (
-    <div className='relative bg-white py-2 mt-3 sm:mt-0'>
+    <div className='relative bg-white py-2 mt-3 md:mt-0'>
       <div
         className='border-2 shadow-sm pt-2 overflow-hidden'
         onTouchStart={handleTouchStart}
@@ -80,7 +80,7 @@ const Trending = () => {
           ))}
         </div>
       </div>
-      <div className="absolute top-8 left-[250px] transform -translate-y-1/2 flex gap-1 px-2">
+      <div className="absolute top-8 sm:left-[600px] md:left-[250px] lg:left-[250px] transform -translate-y-1/2 flex gap-1 px-2">
         <button className="hidden bg-blue-primary border sm:block p-1" onClick={prevSlide}>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="white" className="w-6 h-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />

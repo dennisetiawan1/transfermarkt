@@ -59,19 +59,19 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed w-full text-white z-10 lg:w-4/5 transition-all duration-300`}>
-      <div className={`flex justify-around items-center bg-blue-primary pt-5 px-2 py-3 sm:justify-between sm:px-6 sm:bg-grey-nav ${isScrolled ? 'sm:py-3' : 'sm:py-5'}`} ref={navbarRef}>
+      <div className={`flex justify-around items-center bg-blue-primary pt-5 px-2 py-3 md:justify-between md:px-6 md:bg-grey-nav ${isScrolled ? 'md:py-3' : 'md:py-5'}`} ref={navbarRef}>
         <div className="flex gap-1">
           <a href="/" className="">
-            <img className={`w-[60px] transition-all duration-300 ${isScrolled ? 'sm:w-[100px]' : ' sm:w-[150px]'}`} src={tmLogo} alt="Transfermarkt Logo" />
+            <img className={`w-[60px] transition-all duration-300 ${isScrolled ? 'md:w-[100px]' : ' md:w-[150px]'}`} src={tmLogo} alt="Transfermarkt Logo" />
           </a>
-          <a href="" className='flex gap-1 items-end font-bold text-xs sm:text-black'>
+          <a href="" className='flex gap-1 items-end font-bold text-xs md:text-black'>
             .co.id
-            <span className='arrow sm:hidden'></span>
+            <span className='arrow md:hidden'></span>
             <span className='arrow-lg'></span>
           </a>
         </div>
 
-        <div className='hidden sm:flex gap-1'>
+        <div className='hidden md:flex gap-1'>
           <div className='flex gap-2 w-[370px] bg-white'>
             <input className='w-[330px] pl-3 py-2' type="text" placeholder='Masukkan Kata Pencarian (contoh pemain, klub' />
             <img src={search} className='w-[18px]' alt="" />
@@ -84,24 +84,24 @@ const Navbar = () => {
         <div>
           <ul className='flex gap-2'>
             <li>
-              <Button className='sm:bg-gray-50'>
-                <img src={favorit} className='sm:hidden' alt="" />
-                <img src={favoritBlack} className='sm:block hidden' alt="" />
+              <Button className='md:bg-gray-50'>
+                <img src={favorit} className='md:hidden' alt="" />
+                <img src={favoritBlack} className='md:block hidden' alt="" />
               </Button>
             </li>
             <li>
-              <Button className='sm:bg-gray-50'>
-                <img src={mainClub} className='sm:hidden' alt="" />
-                <img src={mainBlack} className='sm:block hidden' alt="" />
+              <Button className='md:bg-gray-50'>
+                <img src={mainClub} className='md:hidden' alt="" />
+                <img src={mainBlack} className='md:block hidden' alt="" />
               </Button>
             </li>
             <li>
-              <Button className='sm:hidden' bgColor='bg-button-click'>
+              <Button className='md:hidden' bgColor='bg-button-click'>
                 <img src={user} alt="" />
               </Button>
             </li>
             <li>
-              <Button className='hidden sm:flex items-center gap-2' bgColor='bg-blue-400'>
+              <Button className='hidden md:flex items-center gap-2' bgColor='bg-blue-400'>
                 <img src={user} alt="" />
                 <p className='text-xs font-bold'>MASUK</p>
               </Button>
@@ -109,7 +109,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className='flex items-center gap-4 sm:hidden'>
+        <div className='flex items-center gap-4 md:hidden'>
           <div className='flex items-center'>
             <button>
               <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="23" height="26" viewBox="0, 0, 23, 26">
@@ -119,7 +119,7 @@ const Navbar = () => {
               </svg>
             </button>
           </div>
-          <div className='sm:hidden flex items-start'>
+          <div className='md:hidden flex items-start'>
             <button onClick={toggleMenu} className={`menu-button ${isOpen ? 'open' : ''}`}>
               <span></span>
               <span></span>
@@ -162,7 +162,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className={`hidden sm:block bg-blue-primary text-white uppercase font-bold transition-all duration-300 ${isScrolled ? 'py-2' : 'py-5'}`}>
+      <div className={`hidden md:block bg-blue-primary text-white uppercase font-bold transition-all duration-300 ${isScrolled ? 'py-2' : 'py-5'}`}>
         <ul className='flex justify-around text-sm'>
           <li className='text-blue-400'><a href="">Beranda</a></li>
           <li><a href="">Transfer & Rumor</a></li>

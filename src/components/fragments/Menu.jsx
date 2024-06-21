@@ -6,8 +6,8 @@ import QuickSelectButton from '../elements/QuickSelectButton'
 
 const Menu = () => {
   return (
-    <div className='pt-20 sm:pt-40 sm:bg-white'>
-        <div className='hidden sm:block border py-2'>
+    <div className='pt-20 md:pt-40 md:bg-white'>
+        <div className='hidden md:block border py-2'>
             <ul className='text-black flex gap-5 pl-3'>
             <li className='w-10'>
                 <img src={home} className='bg-gray-200' alt="" />
