@@ -3,6 +3,8 @@ import SorotanSlides from '../fragments/SorotanSlides'
 import Iklan from '../fragments/Iklan'
 import Trending from '../fragments/Trending'
 import Berita from '../fragments/Berita'
+import BeritaCardMD from '../elements/BeritaCardMD'
+
 
 const Sorotan = () => {
   return (
@@ -12,13 +14,17 @@ const Sorotan = () => {
             <hr className='mb-2 border-gray-300 border-2' />
         </div>
 
-        <div className='md:flex'>
-            <div className='md:w-full md:flex md:items-center'>
-                <SorotanSlides />
+        <div className=''>
+            <div className='md:flex'>
+                <div className='md:w-full md:flex md:items-center'>
+                    <SorotanSlides />
+                </div>
+                <div className='md:flex md:flex-col md:pl-2'>
+                    <Iklan />
+                    <Trending />
+                </div>
             </div>
-            <div className='md:flex md:flex-col md:pl-2'>
-                <Iklan />
-                <Trending />
+            <div className=''>
                 <Berita />
             </div>
         </div>
