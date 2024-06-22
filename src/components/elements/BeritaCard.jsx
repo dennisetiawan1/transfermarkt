@@ -16,7 +16,7 @@ const BeritaCard = ({ icon, liga, imgBerita, titleKiri, titleKanan, desc, bgColo
         </div>
         <div className='flex items-center'>
             <div className='w-1/2'>
-                <img src={imgBerita} className='w-[167px]' alt="" />
+                <img src={imgBerita} className='w-full' alt="" />
             </div>
             <p className='px-2 w-1/2'>{desc}</p>
         </div>

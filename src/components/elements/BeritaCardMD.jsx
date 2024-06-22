@@ -1,30 +1,23 @@
 import React from 'react'
-import berita from '../../assets/icons/berita.svg'
-import briLiga from '../../assets/liga/briLiga.png'
-import updateMV from '../../assets/update-mv.png'
-import kompetisiIcon from '../../assets/icons/kompetisi.svg'
-import kompetisi from '../../assets/kompetisi.png'
-import euro from '../../assets/liga/euro.png'
-import beritaEuro from '../../assets/berita.png'
 
-const BeritaCardMD = ({ icon, liga, imgBerita, titleKiri, titleKanan, desc, bgColor = 'bg-blue-muda-100'}) => {
+const BeritaCardMD = ({ icon, liga, imgBerita, title, desc, bgColor = 'bg-blue-muda-100'}) => {
   return (
-    <div className=''>
+    <div className='relative w-[334px]'>
       <div>
-        <img src={updateMV} alt="" />
+        <img src={imgBerita} alt="" />
       </div>
-      <div>
-        <div className='flex justify-between'>
-            <p className={`${bgColor} py-1 text-center font-bold text-white uppercase`}>Update market value</p>
+      <div className='relative'>
+        <div className='flex w-full pr-2 absolute bottom-14 justify-between items-center'>
+            <p className={`${bgColor} py-1 px-2 text-center font-bold text-sm text-white uppercase`}>{title}</p>
             <div className={`p-2 ${bgColor} rounded-full border-2 border-white`}>
-                <img src={berita} className='w-[18px]' alt="" />
+                <img src={icon} className='w-[18px]' alt="" />
             </div>
         </div>
-        <div className='flex bg-gray-con p-3'>
+        <div className='flex items-center gap-2 bg-gray-con p-3 pt-4'>
             <div className='bg-white p-2'>
-                <img src={briLiga} className='w-[28px]' alt="" />
+                <img src={liga} className='w-[28px]' alt="" />
             </div>
-            <p className=''>Kenaikan dan Penurunan Yang Cukup Terasa</p>
+            <p className=''>{desc}</p>
         </div>
       </div>
     </div>

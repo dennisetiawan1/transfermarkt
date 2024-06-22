@@ -40,7 +40,7 @@ const SorotanSlides = () => {
 
             {/* <div> */}
                 {/* <div className=''> */}
-                    <div className='relative'>
+                    <div className='relative pb-2 md:pb-0'>
                         <div className="flex justify-center items-center relative">
                             <button 
                                 onClick={prevSlide} 
