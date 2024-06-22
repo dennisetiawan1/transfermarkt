@@ -39,7 +39,7 @@ const Berita = () => {
         desc='Semua Tentang Euro 2024'
         />
       </div>
-      <div className='hidden md:flex gap-2 mt-2'>
+      <div className='hidden md:flex justify-around gap-2 mt-2'>
         <BeritaCardMD
         imgBerita={updateMV}
         title='Update market value'
