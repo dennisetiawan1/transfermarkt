@@ -6,7 +6,7 @@ import Transfer from '../components/layouts/Transfer'
 
 const HomePage = () => {
   return (
-    <div className='lg:w-4/5 mx-auto'>
+    <div className='lg:w-4/5 mx-auto bg-gray-200'>
       <Navbar />
       <Menu />
       <Sorotan />

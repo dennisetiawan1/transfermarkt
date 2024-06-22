@@ -2,9 +2,9 @@ import React from 'react'
 
 const BeritaCardMD = ({ icon, liga, imgBerita, title, desc, bgColor = 'bg-blue-muda-100'}) => {
   return (
-    <div className='relative w-[334px]'>
+    <div className='relative w-[334px] xl:w-full'>
       <div>
-        <img src={imgBerita} alt="" />
+        <img src={imgBerita} className='xl:w-full' alt="" />
       </div>
       <div className='relative'>
         <div className='flex w-full pr-2 absolute bottom-14 justify-between items-center'>

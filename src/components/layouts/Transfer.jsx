@@ -8,7 +8,11 @@ const Transfer = () => {
             <h1 className='highlight-title after:bg-green-600 font-bold text-xl text-black'>TRANSFER</h1>
             <hr className='mb-1 border-gray-300 border-2' />
         </div>
-      <TransferCard />
+        <div className='md:flex gap-1 justify-center'>
+          <TransferCard />
+          <TransferCard />
+          <TransferCard />
+        </div>
     </div>
   )
 }
