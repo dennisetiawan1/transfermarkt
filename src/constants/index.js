@@ -48,5 +48,21 @@ export const trends = [
         tim: tim2,
         nama_tim: 'Dallas',
         img: pemain2
-    }
+    },
+    {
+        name: 'Maarten Paes',
+        value: '26,07Mlyr.',
+        negara: negara2,
+        tim: tim2,
+        nama_tim: 'Dallas',
+        img: pemain2
+    },
+    {
+        name: 'Maarten Paes',
+        value: '26,07Mlyr.',
+        negara: negara2,
+        tim: tim2,
+        nama_tim: 'Dallas',
+        img: pemain2
+    },
 ]
