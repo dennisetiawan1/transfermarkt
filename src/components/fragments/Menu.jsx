@@ -9,8 +9,10 @@ const Menu = () => {
     <div className='pt-20 md:pt-40 md:bg-white'>
         <div className='hidden md:block border py-2'>
             <ul className='text-black flex gap-5 pl-3'>
-            <li className='w-10'>
-                <img src={home} className='bg-gray-200' alt="" />
+            <li className='w-10 cursor-pointer'>
+                <a href="">
+                    <img src={home} className='bg-gray-200' alt="" />
+                </a>
             </li>
             <QuickSelectButton
                 icon={countries}

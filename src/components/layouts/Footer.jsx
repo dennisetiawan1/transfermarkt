@@ -19,20 +19,19 @@ const Footer = () => {
   ];
 
   const careerItems = [
-    'Karir 1',
+    'Kontak',
   ];
 
   const involvementItems = [
-    'Ikut terlibat 1',
-    'Ikut terlibat 2',
-    'Ikut terlibat 3',
-    'Daftar sebagai moderator atau data scout'
+    'Mods & Data Scouts',
+    '11 ketentuan',
+    'Daftar sebagai moderator atau data scout',
+    'Menemukan kesalahan?',
   ];
 
   const aboutUsItems = [
-    'Tentang kita 1',
-    'Tentang kita 2',
-    'Tentang kita 3'
+    'Tim TM',
+    'FAQ',
   ];
 
   return (

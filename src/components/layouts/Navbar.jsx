@@ -76,21 +76,21 @@ const Navbar = () => {
             <input className='w-[330px] pl-3 py-2' type="text" placeholder='Masukkan Kata Pencarian (contoh pemain, klub' />
             <img src={search} className='w-[18px]' alt="" />
           </div>
-          <Button className='bg-gray-50'>
-            <img src={searchDetail} alt="" />
+          <Button className='bg-gray-50 transition-all duration-300 hover:invert'>
+            <img src={searchDetail}  alt="" />
           </Button>
         </div>
 
         <div>
           <ul className='flex gap-2'>
             <li>
-              <Button className='md:bg-gray-50'>
+              <Button className='md:bg-gray-50 transition-all duration-300 md:hover:invert'>
                 <img src={favorit} className='md:hidden' alt="" />
                 <img src={favoritBlack} className='md:block hidden' alt="" />
               </Button>
             </li>
             <li>
-              <Button className='md:bg-gray-50'>
+              <Button className='md:bg-gray-50 transition-all duration-300 md:hover:invert'>
                 <img src={mainClub} className='md:hidden' alt="" />
                 <img src={mainBlack} className='md:block hidden' alt="" />
               </Button>
@@ -101,7 +101,7 @@ const Navbar = () => {
               </Button>
             </li>
             <li>
-              <Button className='hidden md:flex items-center gap-2' bgColor='bg-blue-400'>
+              <Button className='hidden md:flex items-center gap-2 transition-all duration-300 md:hover:bg-blue-primary' bgColor='bg-blue-400'>
                 <img src={user} alt="" />
                 <p className='text-xs font-bold'>MASUK</p>
               </Button>
@@ -165,13 +165,13 @@ const Navbar = () => {
       <div className={`hidden md:block bg-blue-primary text-white uppercase font-bold transition-all duration-300 ${isScrolled ? 'py-2' : 'py-5'}`}>
         <ul className='flex justify-around text-sm'>
           <li className='text-blue-400'><a href="">Beranda</a></li>
-          <li><a href="">Transfer & Rumor</a></li>
-          <li><a href="">Harga Pasaran</a></li>
-          <li><a href="">Kompetisi</a></li>
-          <li><a href="">Statistik</a></li>
-          <li><a href="">Komunitas</a></li>
-          <li><a href="">Permainan</a></li>
-          <li><a href="">Euro 2024</a></li>
+          <li className='hover:text-blue-400'><a href="">Transfer & Rumor</a></li>
+          <li className='hover:text-blue-400'><a href="">Harga Pasaran</a></li>
+          <li className='hover:text-blue-400'><a href="">Kompetisi</a></li>
+          <li className='hover:text-blue-400'><a href="">Statistik</a></li>
+          <li className='hover:text-blue-400'><a href="">Komunitas</a></li>
+          <li className='hover:text-blue-400'><a href="">Permainan</a></li>
+          <li className='hover:text-blue-400'><a href="">Euro 2024</a></li>
         </ul>
       </div>
 

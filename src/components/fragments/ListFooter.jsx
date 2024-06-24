@@ -21,7 +21,7 @@ const ListFooter = ({ header, items, className }) => {
   return (
     <div className='relative my-5 md:m-0'>
       <div className='flex justify-between items-center cursor-pointer md:cursor-auto' onClick={toggleSection}>
-        <h1 className={`uppercase font-semibold ${className}`}>{header}</h1>
+        <h1 className={`uppercase font-semibold md:font-bold ${className}`}>{header}</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

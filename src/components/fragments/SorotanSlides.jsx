@@ -72,7 +72,9 @@ const SorotanSlides = () => {
                             <div className='bg-white p-1'>
                                 <img src={slides[current].tim} className='w-[60px] object-cover' alt="" />
                             </div>
-                            <h3 className='font-oswald font-medium leading-tight text-sm md:text-lg'>{slides[current].desc}</h3>
+                            <a href="" className='font-oswald font-medium leading-tight text-sm md:text-lg md:hover:text-blue-muda-100 cursor-pointer'>
+                                {slides[current].desc}
+                            </a>
                         </div>
                     </div>
                 </div>
