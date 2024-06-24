@@ -3,6 +3,7 @@ import Navbar from '../components/layouts/Navbar'
 import Menu from '../components/fragments/Menu'
 import Sorotan from '../components/layouts/Sorotan'
 import Transfer from '../components/layouts/Transfer'
+import Footer from '../components/layouts/Footer'
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Menu />
       <Sorotan />
       <Transfer />
+      <Footer />
     </div>
   )
 }

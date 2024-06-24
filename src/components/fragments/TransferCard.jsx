@@ -7,7 +7,8 @@ const transferData = [
   { player: 'Lionel Messi', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: 'Free', playerImage: transfer1 },
   { player: 'Gustavo Modesto', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '678,90', milyar: 'Mlyr.', playerImage: transfer1 },
   { player: 'Kevin De Bruyne', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '1,267,88', milyar: 'Mlyr.', playerImage: transfer1 },
-  // Tambahkan lebih banyak transfer sesuai kebutuhan
+  { player: 'Kevin De Bruyne', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '1,267,88', milyar: 'Mlyr.', playerImage: transfer1 },
+  { player: 'Kevin De Bruyne', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '1,267,88', milyar: 'Mlyr.', playerImage: transfer1 },
 ];
 
 const TransferCard = ({ title = 'Transfer Terakhir', pemainKeterangan = 'Pemain/Posisi', klub = 'Klub', biaya = 'Biaya', Data = transferData }) => {
@@ -45,7 +46,7 @@ const TransferCard = ({ title = 'Transfer Terakhir', pemainKeterangan = 'Pemain/
           ))}
         </tbody>
       </table>
-      <a href="#" className='flex items-center justify-end py-1'>
+      <a href="#" className='flex items-center justify-end py-2'>
         <p className='font-sans text-xs text-blue-muda font-bold'>Semua Transfer</p>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="blue" className="w-4 h-4">
           <path strokeLinecap="round" strokeLinejoin="round" d="M9 19l7-7-7-7" />

@@ -7,7 +7,9 @@ import transfer1 from '../../assets/pemain/transfer-1.png';
 const RumorData = [
   { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
   { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
-  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 }
+  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
+  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
+  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
 ]
 
 const Transfer = () => {
@@ -19,7 +21,9 @@ const Transfer = () => {
         </div>
         <div className='md:flex gap-1 justify-center'>
           <TransferCard />
-          <TransferCard />
+          <TransferCard
+          title='Transfer Top Musim Dingin'
+          />
           <TransferCard
             title='Rumor Terakhir'
             biaya='%'

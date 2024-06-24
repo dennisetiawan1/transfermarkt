@@ -34,7 +34,7 @@ const Trending = () => {
   };
 
   return (
-    <div className='relative bg-white py-2 mt-3 md:mt-0 md:w-[322px] lg:w-[335px]'>
+    <div className='relative bg-white py-2 mt-3 md:w-[322px] lg:w-[335px]'>
       <div
         className='border-2 shadow-sm pt-2 overflow-hidden'
         onTouchStart={handleTouchStart}
