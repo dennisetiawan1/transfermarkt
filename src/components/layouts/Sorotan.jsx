@@ -3,8 +3,6 @@ import SorotanSlides from '../fragments/SorotanSlides'
 import Iklan from '../fragments/Iklan'
 import Trending from '../fragments/Trending'
 import Berita from '../fragments/Berita'
-import BeritaCardMD from '../elements/BeritaCardMD'
-
 
 const Sorotan = () => {
   return (

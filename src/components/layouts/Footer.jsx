@@ -35,9 +35,9 @@ const Footer = () => {
   ];
 
   return (
-    <div className='bg-blue-primary text-white font-sans md:pt-10'>
-      <div className='md:grid grid-cols-3 md:px-10'>
-        <div className='px-10 pt-5 md:p-0 '>
+    <div className='text-white font-sans pt-5'>
+      <div className='bg-blue-primary md:grid grid-cols-3 md:px-10 md:pt-7'>
+        <div className='px-10 pt-3 md:p-0 '>
           <ListFooter header='Link cepat' items={quickLinksItems} />
           <ListFooter header='Karir' items={careerItems} />
         </div>

@@ -1,17 +1,7 @@
 import React from 'react';
-import transfer1 from '../../assets/pemain/transfer-1.png';
-import dari1 from '../../assets/tim/dari-1.png';
-import tujuan1 from '../../assets/tim/tujuan-1.png';
+import { transferTerakhir } from '../../constants';
 
-const transferData = [
-  { player: 'Lionel Messi', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: 'Free', playerImage: transfer1 },
-  { player: 'Gustavo Modesto', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '678,90', milyar: 'Mlyr.', playerImage: transfer1 },
-  { player: 'Kevin De Bruyne', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '1,267,88', milyar: 'Mlyr.', playerImage: transfer1 },
-  { player: 'Kevin De Bruyne', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '1,267,88', milyar: 'Mlyr.', playerImage: transfer1 },
-  { player: 'Kevin De Bruyne', position: 'Depan-tengah', from: dari1, to: tujuan1, fee: '1,267,88', milyar: 'Mlyr.', playerImage: transfer1 },
-];
-
-const TransferCard = ({ title = 'Transfer Terakhir', pemainKeterangan = 'Pemain/Posisi', klub = 'Klub', biaya = 'Biaya', Data = transferData }) => {
+const TransferCard = ({ title = 'Transfer Terakhir', pemainKeterangan = 'Pemain/Posisi', klub = 'Klub', biaya = 'Biaya', Data = transferTerakhir }) => {
   return (
     <div className='mt-1 xl:w-full'>
       <h2 className='pl-2 text-white bg-blue-primary uppercase'>{title}</h2>
@@ -25,23 +15,23 @@ const TransferCard = ({ title = 'Transfer Terakhir', pemainKeterangan = 'Pemain/
         </thead>
         <tbody className='font-sans font-semibold'>
           {Data.map((transfer, index) => (
-            <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
+            <tr key={index} className={index % 2 === 0 ? 'bg-gray-100 hover:bg-gray-200 cursor-pointer' : 'bg-white hover:bg-gray-200 cursor-pointer'}>
               <td>
                 <div className='flex items-center'>
                   <img src={transfer.playerImage} alt={transfer.player} className='w-10' />
                   <div className='flex flex-col text-xs font-bold w-full pl-2 md:pr-8'>
-                    <p className='text-blue-muda'>{transfer.player}</p>
+                    <p className='text-blue-muda hover:text-blue-muda-100'>{transfer.player}</p>
                     <p>{transfer.position}</p>
                   </div>
                 </div>
               </td>
               <td className='w-[50px]'>
                 <div className='relative flex items-center'>
-                  {transfer.from && <img src={transfer.from} alt="From Club" className='w-[25px] object-cover absolute opacity-50 top-0 h-6' />}
-                  {transfer.to && <img src={transfer.to} alt="To Club" className='w-[35px] object-cover absolute right-1 h-10' />}
+                  {transfer.from && <img src={transfer.from} alt="From Club" className='w-[25px] object-fill absolute opacity-50 top-0 h-[25px]' />}
+                  {transfer.to && <img src={transfer.to} alt="To Club" className='w-[35px] object-fill absolute right-1 h-[35px]' />}
                 </div>
               </td>
-              <td className='border-b text-center md:pl-3'><span className='font-semibold font-oswald'>{transfer.fee}</span><span className='text-xs'>{transfer.milyar}</span></td>
+              <td className='border-b text-center md:pl-3'><p className='font-semibold font-oswald leading-none'>{transfer.fee}<span className='text-xs'>{transfer.milyar}</span></p></td>
             </tr>
           ))}
         </tbody>

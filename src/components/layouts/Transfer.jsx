@@ -1,16 +1,7 @@
 import React from 'react'
 import TransferCard from '../fragments/TransferCard'
-import dari1 from '../../assets/tim/dari-1.png';
-import tujuan1 from '../../assets/tim/tujuan-1.png';
-import transfer1 from '../../assets/pemain/transfer-1.png';
-
-const RumorData = [
-  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
-  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
-  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
-  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
-  { player: 'Lionel Messi', position: 'Persib', to: tujuan1, fee: '30%', playerImage: transfer1 },
-]
+import { transferTop } from '../../constants';
+import { RumorData } from '../../constants';
 
 const Transfer = () => {
   return (
@@ -23,6 +14,7 @@ const Transfer = () => {
           <TransferCard />
           <TransferCard
           title='Transfer Top Musim Dingin'
+          Data={transferTop}
           />
           <TransferCard
             title='Rumor Terakhir'
